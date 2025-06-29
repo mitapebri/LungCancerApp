@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.lungcancerapp.ui.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/nav_dataset"
+        android:name="com.example.lungcancerapp.ui.DatasetFragment"
+        android:label="Dataset" />
+
+    <fragment
+        android:id="@+id/nav_model"
+        android:name="com.example.lungcancerapp.ui.ModelFragment"
+        android:label="Model" />
+
+    <fragment
+        android:id="@+id/nav_fitur"
+        android:name="com.example.lungcancerapp.ui.FiturFragment"
+        android:label="Fitur" />
+
+    <fragment
+        android:id="@+id/nav_simulasi"
+        android:name="com.example.lungcancerapp.ui.SimulasiFragment"
+        android:label="Simulasi" />
+</navigation>

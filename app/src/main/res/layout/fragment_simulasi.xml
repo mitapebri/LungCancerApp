@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Prediksi Kanker Paru-paru"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan data pasien sesuai kondisi aktual untuk mengetahui prediksi risiko kanker paru-paru."
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 Data Pasien"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Usia" />
+            <EditText
+                android:id="@+id/inputAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contoh: 35"
+                android:inputType="number" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jenis Kelamin"
+                android:layout_marginTop="12dp" />
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/genderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki" />
+                <RadioButton
+                    android:id="@+id/genderFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🩺 Gejala Awal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <CheckBox android:id="@+id/checkSmoking" android:text="Merokok"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkFinger" android:text="Jari Menguning"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkStress" android:text="Stres Mental"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkPollution" android:text="Paparan Polusi"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkIllness" android:text="Penyakit Kronis"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Tingkat Energi" android:layout_marginTop="12dp" />
+            <SeekBar android:id="@+id/inputEnergySeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+            <TextView android:id="@+id/energyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semakin tinggi, semakin bugar dan sehat"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧬 Gejala Lanjutan dan Riwayat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <CheckBox android:id="@+id/checkImmune" android:text="Lemah Imun"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkBreathing" android:text="Masalah Pernapasan"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkAlcohol" android:text="Konsumsi Alkohol"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkThroat" android:text="Ketidaknyamanan Tenggorokan"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Saturasi Oksigen (%)" android:layout_marginTop="12dp" />
+            <SeekBar android:id="@+id/inputOxygenSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100" />
+            <TextView android:id="@+id/oxygenValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semakin tinggi, semakin baik fungsi paru-paru"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox android:id="@+id/checkChest" android:text="Sesak Dada"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkFamily" android:text="Riwayat Keluarga"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkFamilySmoke" android:text="Keluarga Perokok"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <CheckBox android:id="@+id/checkStressImmune" android:text="Stres Melemahkan Imun"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonPredict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PREDIKSI"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

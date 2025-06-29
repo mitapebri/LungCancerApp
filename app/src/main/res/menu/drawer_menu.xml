@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:title="Home" android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/nav_dataset" android:title="Dataset" android:icon="@drawable/ic_dataset"/>
+    <item android:id="@+id/nav_model" android:title="Model" android:icon="@drawable/ic_model"/>
+    <item android:id="@+id/nav_fitur" android:title="Fitur" android:icon="@drawable/ic_featured"/>
+    <item android:id="@+id/nav_simulasi" android:title="Simulasi" android:icon="@drawable/ic_simulasi"/>
+</menu>
