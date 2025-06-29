@@ -47,8 +47,11 @@
                 android:id="@+id/inputAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
                 android:hint="Contoh: 35"
                 android:inputType="number" />
+
 
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jenis Kelamin"
                 android:layout_marginTop="12dp" />

@@ -1,4 +1,4 @@
-package com.example.lungcancerapp.ui
+package com.example.lungcancerapp.ui.fitur
 
 import android.graphics.Typeface
 import android.os.Bundle

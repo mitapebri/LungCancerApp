@@ -1,3 +1,5 @@
+package com.example.lungcancerapp.ui.dataset
+
 data class DatasetItem(
     val age: String,
     val gender: String,

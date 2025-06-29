@@ -1,6 +1,5 @@
-package com.example.lungcancerapp.ui
+package com.example.lungcancerapp.ui.dataset
 
-import DatasetItem
 import android.graphics.Typeface
 import android.os.Bundle
 import android.text.method.LinkMovementMethod

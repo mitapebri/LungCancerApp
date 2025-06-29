@@ -1,4 +1,4 @@
-package com.example.lungcancerapp.ui
+package com.example.lungcancerapp.ui.simulasi
 
 import android.os.Bundle
 import android.view.LayoutInflater

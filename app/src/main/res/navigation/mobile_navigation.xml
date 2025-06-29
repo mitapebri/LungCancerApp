@@ -1,31 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/nav_home">
 
+    <!-- Home Fragment -->
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.lungcancerapp.ui.HomeFragment"
-        android:label="Home" />
+        android:name="com.example.lungcancerapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
 
+    <!-- Dataset Fragment -->
     <fragment
         android:id="@+id/nav_dataset"
-        android:name="com.example.lungcancerapp.ui.DatasetFragment"
-        android:label="Dataset" />
+        android:name="com.example.lungcancerapp.ui.dataset.DatasetFragment"
+        android:label="Dataset"
+        tools:layout="@layout/fragment_dataset" />
 
+    <!-- Model Fragment -->
     <fragment
         android:id="@+id/nav_model"
-        android:name="com.example.lungcancerapp.ui.ModelFragment"
-        android:label="Model" />
+        android:name="com.example.lungcancerapp.ui.model.ModelFragment"
+        android:label="Model"
+        tools:layout="@layout/fragment_model" >
 
+        <!-- Aksi navigasi ke Detail -->
+        <action
+            android:id="@+id/action_nav_model_to_modelDetailFragment"
+            app:destination="@id/modelDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/modelDetailFragment"
+        android:name="com.example.lungcancerapp.ui.model.ModelDetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_model_detail">
+
+        <argument
+            android:name="tipe"
+            app:argType="string"
+            android:defaultValue="arsitektur" />
+    </fragment>
+
+    <!-- Fitur Fragment -->
     <fragment
         android:id="@+id/nav_fitur"
-        android:name="com.example.lungcancerapp.ui.FiturFragment"
-        android:label="Fitur" />
+        android:name="com.example.lungcancerapp.ui.fitur.FiturFragment"
+        android:label="Fitur"
+        tools:layout="@layout/fragment_fitur" />
 
+    <!-- Simulasi Fragment -->
     <fragment
         android:id="@+id/nav_simulasi"
-        android:name="com.example.lungcancerapp.ui.SimulasiFragment"
-        android:label="Simulasi" />
+        android:name="com.example.lungcancerapp.ui.simulasi.SimulasiFragment"
+        android:label="Simulasi"
+        tools:layout="@layout/fragment_simulasi" />
 </navigation>

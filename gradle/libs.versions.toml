@@ -33,4 +33,4 @@ tensorflow-lite-metadata = { group = "org.tensorflow", name = "tensorflow-lite-m
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+androidx-navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version = "2.5.3" }
